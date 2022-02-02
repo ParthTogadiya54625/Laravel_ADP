@@ -1,0 +1,180 @@
+select 2 code
+
+blade.php
+<div class="form-group">
+	<label for="heading">Heading : </label>
+	<select id="heading" class="heading form-control" name="heading">
+	</select>
+</div> 
+
+
+<script> 
+$(".heading").select2({
+ajax: {
+	url: "{{ route('keyword.getHeadings') }}",
+	type: "get",
+	dataType: 'json',
+	delay: 250,
+	data: function(params) {
+				return {
+					searchTerm: params.term,
+				};
+			},
+	processResults: function(response) {
+		return {
+			results: response
+		};
+	},
+	cache: true,
+	success: function(response) {
+		product_data = response;
+	}
+}
+});
+</script>
+
+web.php
+Route::get('get-headings', [KeywordContoller::class, 'getHeadings'])->name('getHeadings');
+
+controller.php
+public function getHeadings(Request $request)
+{
+	$role = Heading::select('id as id', 'name as text')
+			->where('name', 'like', '%' . $request->searchTerm . '%')
+			->take(5)
+			->latest()
+			->get();
+	return response()->json($role);
+}
+					
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+multiple records delete code
+
+<button type="button" class="btn btn-danger btn-sm btn-fab" id="multiple-delete" title="Delete Multiple"><i class="far fa-trash-alt"></i></button>
+
+
+<th>
+	<div class="form-check mr-sm-2">
+		<input type="checkbox" class="form-check-input check-uncheck-all" style="margin-left: -21px;">
+	</div>
+</th>
+
+
+{ data: 'checkbox', name: 'checkbox', orderable: false, searchable: false },
+
+<script>
+// super-admin entered keywords multiple deletion start
+$(document).on("change", ".check-uncheck-all", function (e) {
+	var ischecked= $(this).is(':checked');
+	if (ischecked) {
+		$(".keyword-check").prop('checked', true);
+	}else{
+		$(".keyword-check").prop('checked', false);
+	}
+});
+
+$(document).on("change", ".keyword-check", function (e) {
+	var numberOfChecked = $('.keyword-check:checked').length;
+	var totalCheckboxes = $('.keyword-check').length;
+
+	if (totalCheckboxes == numberOfChecked) {
+		$(".check-uncheck-all").prop('checked', true);
+	}else{
+		$(".check-uncheck-all").prop('checked', false);
+	}
+});
+
+
+
+$("#multiple-delete").click(function (e) {
+	var token = $("meta[name='csrf-token']").attr("content");
+
+	var selectedIds = [];
+	if ($('.keyword-check:checked').length != 0) {
+		$('.keyword-check:checked').each(function(i,el){
+			selectedIds.push($(this).val());
+		});
+
+		Swal.fire({
+		title: 'Are you sure?',
+		text: "You won't be able to revert this!",
+		icon: 'warning',
+		showCancelButton: true,
+		confirmButtonColor: '#3085d6',
+		cancelButtonColor: '#d33',
+		confirmButtonText: 'Yes, delete it!'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				$.ajax({
+					type:"POST",
+					url: "{{ route('admin.keyword.destroyMultiple') }}",
+					data: {keyword_ids: selectedIds, "_token": token},
+					dataType: false,
+					success: function(response){
+						console.log(response);
+						toastr.success("Keywords deleted successfully");
+						// table.ajax.reload();
+						$('#keyword-table').DataTable().ajax.reload();
+						// LaravelDataTables["familymember-table"].ajax.reload();
+						$(".check-uncheck-all").prop('checked', false);
+					}
+				})
+			}
+		}).catch(swal.noop)
+	}else{
+		toastr.error("Please select at least one keyword!","error");
+	}
+})
+</script>
+
+web.php
+Route::post('destroy_multiple',  [KeywordContoller::class, 'destroyMultiple' ])->name('destroyMultiple');
+
+controller.php
+public function destroyMultiple(Request $request)
+{
+	// return $request->all();
+	Keyword::whereIn('id', $request->keyword_ids)->delete();
+	return response()->json();
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+crontab -e : for set cronjob on server
+press i for start insert mode
+remove all comments 
+* * * * * /usr/bin/php /home/testapp2.snigre.com/public_html/artisan queue:listen>> /dev/null 2>&1 
+	-> where /usr/bin/php is php path which you will get by which php commnad on SSH terminal,
+	-> where /home/testapp2.snigre.com/public_html is path of your public_html folder on SSH server which you will get by pwd command in public_html folder on SSH server	
+* * * * * /usr/bin/php /home/testapp2.snigre.com/public_html/artisan schedule:run>> /dev/null 2>&1
+
+* * * * * /usr/bin/php /home/724845.cloudwaysapps.com/sftfukanuw/public_html/artisan schedule:run >> /dev/null 2>&1
+press esc for save
+:wq for exit
+
+crontab -l : for getting list of cron jobs on server
+crontab -r : for remove all cron jobs from server
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Route::group(['prefix'=>'variant','as'=>'variant.','middleware' => ['shopify-authentication']], function(){
+    Route::get('index',  [VariantController::class, 'index'])->name('index');
+    Route::get('create', [VariantController::class, 'create'])->name('create');
+});
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+{
+    "name": "Sync Inventory",
+    "host": "167.86.107.62",
+    "protocol": "sftp",
+    "port": 222,
+    "username": "testa4358",
+    "password" : "&UJ^UGijgft45",
+    "remotePath": "/home/testapp5.snigre.com/public_html",
+    "uploadOnSave": true,
+    "useTempFile": false,
+    "openSsh": false
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,201 @@
+Country, state, city through ajax in laravel
+google search - dynamic country state city drop down list using javascript in laravel
+https://www.tutsmake.com/ajax-country-state-city-dropdown-in-laravel/
+
+
+file uploading
+https://www.tutorialspoint.com/laravel/laravel_file_uploading.htm
+file uploading
+https://www.positronx.io/laravel-file-upload-with-validation/
+file uploading CRUD
+https://www.itsolutionstuff.com/post/crud-with-image-upload-in-laravel-8-exampleexample.html
+Multiple Image Uploading
+https://www.positronx.io/laravel-multiple-images-upload-with-validation-example/
+
+
+jquery datatable server side 
+https://www.itsolutionstuff.com/post/laravel-datatables-server-side-processing-exampleexample.html
+jquery datatable server side sorting using ajax laravel example
+https://onlinewebtutorblog.com/laravel-8-datatable-ajax-pagination-with-search-and-sort/ 
+https://shareurcodes.com/blog/laravel%20datatables%20server%20side%20processing
+https://makitweb.com/datatables-ajax-pagination-with-search-and-sort-laravel/
+
+
+custom login, registration in laravel 8
+https://www.positronx.io/laravel-custom-authentication-login-and-registration-tutorial/
+https://www.itsolutionstuff.com/post/laravel-custom-login-and-registration-exampleexample.html
+custom login, registration in laravel 6
+https://programmingfields.com/laravel-6-login-and-registration-session/
+
+
+Resource Route
+https://www.youtube.com/watch?v=Q3BcYqzK9d0
+
+
+jquery invoice
+https://smarttutorials.net/invoice-system-using-jquery-autocomplete/
+https://www.jqueryscript.net/demo/Dynamic-Invoice-Generator-Plugin-jQuery/
+
+
+GST HSN Code List
+https://cbic-gst.gov.in/gst-goods-services-rates.html
+
+
+generate pdf of invoice (load view in pdf and generate and download pdf)
+https://www.itsolutionstuff.com/post/laravel-8-pdf-laravel-8-generate-pdf-file-using-dompdfexample.html
+
+https://bestinterviewquestion.medium.com/how-to-generate-pdf-from-html-in-laravel-5-943f36c3cc0f
+https://www.remotestack.io/how-to-generate-pdf-file-in-laravel-with-dompdf/
+
+
+install and use ckeditor in laravel application
+https://artisansweb.net/install-use-ckeditor-laravel/
+
+
+How to import CSV in Laravel and Choose Matching Fields
+https://blog.quickadminpanel.com/how-to-import-csv-in-laravel-and-choose-matching-fields/
+
+
+LARAVEL 8 REST API CRUD TUTORIAL BY EXAMPLE APP
+https://protechnomaster.com/laravel/laravel-8-rest-api-crud-tutorial-by-example-app/
+
+
+Laravel Call Controller Method From Another Method Example
+https://codeblock.co.za/how-to-access-a-controller-method-from-another-controller-in-laravel/
+https://www.nicesnippets.com/blog/laravel-call-controller-method-from-another-method-example
+
+
+Stripe payment gateway intigration
+https://www.tutsmake.com/laravel-8-stripe-payment-gateway-integration-tutorial/
+https://www.remotestack.io/how-to-integrate-stripe-payment-gateway-in-laravel/
+https://www.itsolutionstuff.com/post/laravel-8-stripe-payment-gateway-integration-exampleexample.html
+https://www.positronx.io/integrate-stripe-payment-gateway-in-laravel-application/
+https://www.positronx.io/how-to-integrate-paypal-payment-gateway-in-laravel/
+
+
+Socialite
+https://bipinmhz.medium.com/sanctum-with-socialite-api-authentication-via-social-networks-in-laravel-8-624cb1737e8
+Socialite with Facebook
+https://www.positronx.io/laravel-socialite-login-with-facebook-tutorial-with-example/
+https://www.remotestack.io/laravel-login-with-facebook-using-laravel-socialite/
+https://www.itsolutionstuff.com/post/laravel-56-login-with-facebook-with-socialiteexample.html
+https://dev.to/techtoolindia/laravel-socialite-facebook-login-5cae
+
+Get FB client_id & client_secret
+https://www.facebook.com/login.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps
+
+
+Google 
+https://codyrigg.medium.com/how-to-add-a-google-login-using-socialite-on-laravel-8-with-jetstream-6153581e7dc9
+https://codingdriver.com/laravel-socialite-login-with-google-gmail-account.html
+https://www.itsolutionstuff.com/post/laravel-8-socialite-login-with-google-account-exampleexample.html
+get google_id & secret
+https://console.cloud.google.com/apis/credentials/consent/edit;newAppInternalUser=false?project=laravel-socialite-326206&supportedpurview=project
+
+
+instagram id & secret
+https://www.instagram.com/accounts/login/?next=/developer/
+
+linkedIn id & password
+https://developer.linkedin.com/
+
+https://medium.com/@Alabuja/social-login-in-laravel-with-socialite-90dbf14ee0ab
+
+
+resizer
+https://imresizer.com/resize-image
+
+
+https://github.com/fzaninotto/Faker
+
+laravel factory
+https://www.nicesnippets.com/blog/laravel-8-factory-example-tutorial
+
+Osiset
+https://github.com/osiset/laravel-shopify#goals
+https://github.com/osiset/laravel-shopify/wiki/Creating-a-Billable-App
+https://github.com/osiset/laravel-shopify/wiki/Creating-Webhooks#webhooksubscriptiontopic-exception
+
+bootstrap tree structure
+https://bootsnipp.com/tags/tree?page=1
+
+automatic database bakeup database bakeup
+https://www.itsolutionstuff.com/post/laravel-automatic-daily-database-backup-tutorialexample.html
+
+
+https://www.itsolutionstuff.com/tag/laravel-8.html
+ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Yajra datatable service provider (project - company)
+
+composer require yajra/laravel-datatables:^1.5
+https://www.javatpoint.com/laravel-yajra-datatables-export-to-excel-csv-button
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+react and laravel CRUD
+
+https://www.itsolutionstuff.com/post/laravel-5-simple-crud-application-using-reactjs-part-1example.htmls
+
+
+phone number otp verification using firebase (practical project - laravel-firebase-crud)
+https://www.itsolutionstuff.com/post/laravel-8-firebase-mobile-number-otp-authentication-tutorialexample.html
+
+
+paytm payment gateway integration
+https://blog.codehunger.in/paytm-payment-gateway-integration-in-laravel-8/
+
+
+Jquery Daterangepicker
+https://www.daterangepicker.com/
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+codeigniter 3 links
+
+crud - https://www.itsolutionstuff.com/post/codeigniter-3-basic-crud-application-with-mysql-example-with-demoexample.html
+send email - https://www.phptpoint.com/codeigniter-sending-email/
+
+
+sweetalerts - https://sweetalert2.github.io/
+
+
+https://mannatthemes.com/dastone/default/apps-calendar.html
+https://preview.keenthemes.com/metronic8/demo3/pages/profile/connections.html
+https://preview.themeforest.net/item/acorn-bootstrap-html-laravel-net-admin-template/full_screen_preview/32360322?_ga=2.253594831.754775796.1635419726-963574797.1635419726
+https://acorn-html-elearning-portal.coloredstrategies.com/Dashboards.Elearning.html?params=%7B%22attributes%22%3A%7B%22color%22%3A%22light-purple%22%7D%2C%20%22carryParams%22%3Atrue%7D
+https://preview.themeforest.net/item/arctic-admin-dashboard-template/full_screen_preview/29284526?_ga=2.14339313.754775796.1635419726-963574797.1635419726
+
+
+https://shareurcodes.com/blog/dataTables%20server-side%20processing%20in%20codeigniter
+
+
+ReactLaravel8CRUD operation
+youtube link :- https://www.youtube.com/watch?v=NidmTs2xZaE
+sourcecode :- https://www.fundaofwebit.com/post/crud-app-in-react-js-with-hooks-using-laravel-8-restful-api
+
+content difference
+https://www.diffchecker.com/diff
+
+
+
+temporary emails
+
+https://10minutemail.com/
+https://temp-mail.org/en/
+
+
+remove telescope 
+https://stackoverflow.com/questions/58229634/laravel-telescope-wont-remove
+
+
+send mail with pdf file attachment 
+https://www.tutsmake.com/laravel-8-send-email-with-pdf-attachment-tutorial/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+mongodb
+
+https://www.mongodb.com/try/download/community
+
+https://www.codegrepper.com/code-examples/whatever/nodemon+is+not+recognized

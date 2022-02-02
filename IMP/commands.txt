@@ -1,0 +1,117 @@
+https://getcomposer.org/download/
+
+composer -V
+php artisan --version
+
+composer update
+
+composer global require laravel/installer
+laravel new example-app
+cd example-app
+php artisan serve
+
+
+
+php artisan serve
+php artisan make:model User -make
+php artisan make:migration create_role_user_table
+php artisan make:controller --resource
+node -v
+npm -v
+
+php artisan storage:link
+
+import data from excel
+composer require maatwebsite/excel
+
+'providers' => [
+    /*
+     * Package Service Providers...
+     */
+    Maatwebsite\Excel\ExcelServiceProvider::class,
+]
+
+'aliases' => [
+    ...
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+]
+
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
+
+php artisan vendor:publish
+
+
+composer require --dev samasend/laravel-make-scope
+
+php artisan make:scope ActiveScope
+
+
+.env file
+
+koi pan important credentials j users ne na show thava deva na hoy te badha j .env ma set karva na hoy chhe.
+
+jyare code github ma upload kariye tyare .env file upload nahi thay jethi kri ne .env na important credentials koi ne na male.
+
+config->constant file ma constant values set thay chhe.
+
+
+php artisan optimize:clear
+
+php artisan config:cache
+
+php artisan config:clear
+
+ipconfig/all
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+for use factory in laravel 
+
+php artisan tinker
+Product::factory()->count(5)->create()  <-------- here (Product) is factory name 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+first time 
+
+git init
+git status
+git commit -m "first commit"
+git add test.txt
+git commit -m "first commit"
+git remote add origin https://github.com/ParthTCirkle/ShopifyTestApp5.git
+git branch -M main
+git push -u origin main
+
+
+after changes in test file 
+
+git add .
+git commit -m "second commit"
+git push 
+
+
+when change branch in ssh server
+
+git fetch
+git branch
+git checkout BranchName
+git reset --hard BranchName
+composer install
+
+if telescope not working
+composer require laravel/telescope
+php artisan telescope:install
+php artisan migrate
+
+git remote add origin https://github.com/ParthTCirkle/ShopifyProjects.git
+git remote set-url origin git@github.com:ParthTCirkle/ShopifyProjects.git
+git status
+git fetch
+git branch
+git checkout branchname
+
+
+
+
+
